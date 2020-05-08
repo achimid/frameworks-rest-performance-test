@@ -1,5 +1,5 @@
 # Comparação performática entre diferêntes frameworks e linkguagens
-Após ler essa página [Benchmarking Node.js Http Performance Part 1 Express.js](https://mamaz.github.io/benchmarking-nodejs-http-performance.html) eu fiquei curioso em replicar estes testes com as linguagens de programação que eu estou utilizando recentemente.
+Após ler essa página "[Benchmarking Node.js Http Performance Part 1 Express.js](https://mamaz.github.io/benchmarking-nodejs-http-performance.html)" eu fiquei curioso em replicar estes testes com as linguagens de programação que eu estou utilizando recentemente.
 
 # Instalação da ferramenta de benchmark (Bombardier)
 https://softwaretester.info/http-benchmarking-with-bombardier/
@@ -53,4 +53,8 @@ Testando a aplicação python+flask+gunicorn
 
 
 
-  
+![machine-specs](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/machine-specs.png)
+![python+flask+gunicorn](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/python%2Bflask%2Bgunicorn.png)
+![java+springboot](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot.png)
+![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bexpress.png)
+![go+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/go%2Bhttp.png)
