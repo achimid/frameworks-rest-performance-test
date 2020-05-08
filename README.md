@@ -16,11 +16,6 @@ Linguagens e Frameworks utilizados:
 * Python + Flask + Gunicorn
 
 
-
-
-
-
-
 ## Ferramenta de benchmark (Bombardier)
 Seguindo a recomendação do artigo mencionado, utilizei como ferramenta de benchmark o (Bombardier), é uma ferramenta escrita em GO que fica responsavel por enviar as requisições de teste para as aplicações que será testada, com ela é possivel simular grandes quantidades de requisições paralelas. Ao final da execução é exibido um relatório informando os dados coletados.
 
@@ -32,6 +27,12 @@ No artigo mencionado anteriormente e tambem nos meus testes, a ferramente foi co
 
 
 ## Expecificações da maquina de teste
+
+Segue abaixo as expecificações da maquina que eu executei os testes.
+
+![machine-specs](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/machine-specs.png)
+
+É valido resaltar
 
 
 # Comandos para execução dos projetos
@@ -83,7 +84,7 @@ Testando a aplicação python+flask+gunicorn
 
 
 
-![machine-specs](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/machine-specs.png)
+
 ![python+flask+gunicorn](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/python%2Bflask%2Bgunicorn.png)
 ![java+springboot](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot.png)
 ![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bexpress.png)
