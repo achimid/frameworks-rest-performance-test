@@ -8,6 +8,8 @@ Tenho como objetivo o aprendizado de utilização da ferramenta de benchmark [Bo
 
 Para a realização dos teste, eu criei 4 aplicações em diferentes linguagens e frameworks que realizam a mesma ação. A aplicação é responsavel por receber uma requisição HTTP seguindo o protocolo REST e dar como resposta um texto estático escrito "hello".
 
+Linguagens e Frameworks utilizados:
+
 * Java + Spring Boot + Embed Toncat
 * Javascript (NodeJS) + Express
 * Go + Http
