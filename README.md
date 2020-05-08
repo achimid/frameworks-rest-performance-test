@@ -33,15 +33,47 @@ Segue abaixo as expecificações da maquina que eu executei os testes.
 ![machine-specs](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/machine-specs.png)
 
 Deve ser resaltado que as aplicações não foram executadas simultaneamente, apenas uma aplicação foi executada por vez.
+
 Deve ser resaltado que a aplicação e a ferramenta de banchmark foram executadas simultaneamente.
+
 Deve ser resaltado que tentei manter as mesmas condições de execução.
+
 
 ## Resultados
 
+Após execução dos testes foi posivel obter os valores do banchmark.
+
+#### Python+Flask+Gunicorn
+
+Avg - Reqs/Sec: 8692 
+
+Tempo de execução: 9m 35s
 
 ![python+flask+gunicorn](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/python%2Bflask%2Bgunicorn.png)
+
+
+#### Java+SpringBoot
+
+Avg - Reqs/Sec: 42170 
+
+Tempo de execução: 1m 58s
+
 ![java+springboot](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot.png)
+
+#### Javascript+Express
+
+Avg - Reqs/Sec: 44895 
+
+Tempo de execução: 1m 51s
+
 ![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bexpress.png)
+
+#### Go+Http
+
+Avg - Reqs/Sec: 96232 
+
+Tempo de execução: 51s
+
 ![go+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/go%2Bhttp.png)
 
 
