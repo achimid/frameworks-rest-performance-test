@@ -29,9 +29,9 @@ Links para instalação das linguagens:
 
 # Execução do python+flask+gunicorn
     cd python+flask+gunicorn
-    source .venv/bin/activate
+    source venv/bin/activate
     pip install -r requirements.txt
-    gunicorn --bind 127.0.0.1:6060 app:app -w 8 --work
+    gunicorn --bind 127.0.0.1:6060 app:app -w 8 --worker-class=gevent --worker-connections=1000
 
 # Execução do banchmark (5 milhões de requisições, 125 requisições em paralelo)
     
