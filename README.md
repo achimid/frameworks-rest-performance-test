@@ -82,11 +82,7 @@ Tempo de execução: 51s
 
 ## Comandos para execução dos projetos e replicação
 
-Para executar o projetos, você deve possuir as linguagens instaladas em sua maquina:
-Links para instalação das linguagens:
-    - 
-    - 
-    - 
+Para executar o projetos, você deve possuir as linguagens instaladas em sua maquina
 
 ### Execução do projeto java+springboot
     cd java+springboot/
