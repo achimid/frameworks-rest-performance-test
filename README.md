@@ -47,7 +47,7 @@ Após execução dos testes foi posivel obter os valores do banchmark.
 
 Avg - Reqs/Sec: **8692**
 
-Tempo de execução: v9m 35s**
+Tempo de execução: **9m 35s**
 
 ![python+flask+gunicorn](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/python%2Bflask%2Bgunicorn.png)
 
