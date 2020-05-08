@@ -36,16 +36,20 @@ Links para instalação das linguagens:
 # Execução do banchmark (5 milhões de requisições, 125 requisições em paralelo)
     
 Testando a aplicação go+http
+
     bombardier -c 125 -n 5000000 http://localhost:7070/hello
 
 Testando a aplicação java+springboot
+
     bombardier -c 125 -n 5000000 http://localhost:8080/hello
 
 Testando a aplicação javascript+express
+
     bombardier -c 125 -n 5000000 http://localhost:9090/hello
 
 Testando a aplicação python+flask+gunicorn
-    bombardier -c 125 -n 5000000 http://localhost:9090/hello
+
+    bombardier -c 125 -n 5000000 http://localhost:6060/hello
 
 
 
