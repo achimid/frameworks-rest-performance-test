@@ -23,7 +23,7 @@ No meu caso eu utilizei como quesito de comparação a média de requisições p
 
 Para efeutar a instalação da ferramenta eu segui este [link](https://softwaretester.info/http-benchmarking-with-bombardier/)
 
-No artigo mencionado anteriormente e tambem nos meus testes, a ferramente foi configurada para efetuar um total de 5.000.000 requisições, com 125 requisições em paralelo.
+No artigo mencionado anteriormente e tambem nos meus testes, a ferramente foi configurada para efetuar um total de 5.000.000 (5 Milhões) de requisições, com 125 requisições em paralelo.
 
 
 ## Expecificações da maquina de teste
@@ -32,7 +32,9 @@ Segue abaixo as expecificações da maquina que eu executei os testes.
 
 ![machine-specs](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/machine-specs.png)
 
-É valido resaltar
+Deve ser resaltado que as aplicações não foram executadas simultaneamente, apenas uma aplicação foi executada por vez.
+Deve ser resaltado que a aplicação e a ferramenta de banchmark foram executadas simultaneamente.
+Deve ser resaltado que tentei manter as mesmas condições de execução.
 
 
 # Comandos para execução dos projetos
