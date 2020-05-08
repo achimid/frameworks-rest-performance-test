@@ -45,7 +45,7 @@ Após execução dos testes foi posivel obter os valores do banchmark.
 
 ### Python+Flask+Gunicorn
 
-Avg - Reqs/Sec: **8692**
+Avg - Reqs/Sec: **8.692**
 
 Tempo de execução: **9m 35s**
 
@@ -54,7 +54,7 @@ Tempo de execução: **9m 35s**
 
 ### Java+SpringBoot
 
-Avg - Reqs/Sec: **42170**
+Avg - Reqs/Sec: **42.170**
 
 Tempo de execução: **1m 58s**
 
@@ -63,7 +63,7 @@ Tempo de execução: **1m 58s**
 
 ### Javascript+Express
 
-Avg - Reqs/Sec: **44895**
+Avg - Reqs/Sec: **44.895**
 
 Tempo de execução: **1m 51s**
 
@@ -72,7 +72,7 @@ Tempo de execução: **1m 51s**
 
 ### Go+Http
 
-Avg - Reqs/Sec: **96232**
+Avg - Reqs/Sec: **96.232**
 
 Tempo de execução: **51s**
 
