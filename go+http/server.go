@@ -6,11 +6,11 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Hi there, %s!", r.URL.Path[1:])
+  fmt.Fprintf(w, "hello", r.URL.Path[1:])
 }
 
 func main() {
-  http.HandleFunc("/", handler)
-  fmt.Println("server is listening on 3331")
-  http.ListenAndServe(":3331", nil)
+  http.HandleFunc("/hello", handler)
+  fmt.Println("server is listening on 7070")
+  http.ListenAndServe(":7070", nil)
 }
