@@ -84,28 +84,28 @@ Tempo de execução: 51s
 
 Para executar o projetos, você deve possuir as linguagens instaladas em sua maquina
 
-### Execução do projeto java+springboot
+#### Execução do projeto java+springboot
     cd java+springboot/
     ./gradlew build -x test
     java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
 
-### Execução do projeto javascript+express
+#### Execução do projeto javascript+express
     cd javascript+express/
     npm install
     npm start
 
-### Execução do projeto go+http
+#### Execução do projeto go+http
     cd go+http
     go build server.go
     ./server
 
-### Execução do python+flask+gunicorn
+#### Execução do python+flask+gunicorn
     cd python+flask+gunicorn
     source venv/bin/activate
     pip install -r requirements.txt
     gunicorn --bind 127.0.0.1:6060 app:app -w 8 --worker-class=gevent --worker-connections=1000
 
-### Execução do banchmark (5 milhões de requisições, 125 requisições em paralelo)
+#### Execução do banchmark (5 milhões de requisições, 125 requisições em paralelo)
     
 Testando a aplicação go+http
 
