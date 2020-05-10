@@ -11,6 +11,8 @@ Para a realização dos teste, eu criei 4 aplicações em diferentes linguagens 
 Linguagens e Frameworks utilizados:
 
 * Java + Spring Boot + Embed Tomcat
+* Java + Spring Boot + Embed Jetty
+* Java + Spring Boot + Embed Undertow
 * Javascript (NodeJS) + Express
 * Javascript (NodeJS) + Restify
 * Go + Http
@@ -53,13 +55,13 @@ Tempo de execução: **9m 35s**
 ![python+flask+gunicorn](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/python%2Bflask%2Bgunicorn.png)
 
 
-### Java+SpringBoot
+### Java+SpringBoot+Tomcat
 
 Avg - Reqs/Sec: **42.170**
 
 Tempo de execução: **1m 58s**
 
-![java+springboot](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot.png)
+![java+springboot+tomcat](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Btomcat.png)
 
 
 ### Javascript+Express
@@ -80,6 +82,24 @@ Tempo de execução: **1m 28s**
 ![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Brestify.png)
 
 
+### Java+SpringBoot+Undertow
+
+Avg - Reqs/Sec: **96363**
+
+Tempo de execução: **1m 24s**
+
+![java+springboot+undertow](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bundertow.png)
+
+
+### Java+SpringBoot+Jetty
+
+Avg - Reqs/Sec: **61096**
+
+Tempo de execução: **1m 21s**
+
+![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bjetty.png)
+
+
 ### Go+Http
 
 Avg - Reqs/Sec: **96.232**
@@ -94,8 +114,18 @@ Tempo de execução: **51s**
 
 Para executar o projetos, você deve possuir as linguagens instaladas em sua maquina
 
-#### Execução do projeto java+springboot
-    cd java+springboot/
+#### Execução do projeto java+springboot+tomcat
+    cd java+springboot+tomcat/
+    ./gradlew build -x test
+    java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
+
+#### Execução do projeto java+springboot+jetty
+    cd java+springboot+jetty/
+    ./gradlew build -x test
+    java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
+
+#### Execução do projeto java+springboot+undertow
+    cd java+springboot+undertow/
     ./gradlew build -x test
     java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
 
@@ -126,15 +156,23 @@ Testando a aplicação go+http
 
     bombardier -c 125 -n 5000000 http://localhost:7070/hello
 
-Testando a aplicação java+springboot
+Testando a aplicação java+springboot+tomcat
 
     bombardier -c 125 -n 5000000 http://localhost:8080/hello
+
+Testando a aplicação java+springboot+jetty
+
+    bombardier -c 125 -n 5000000 http://localhost:8181/hello
+
+Testando a aplicação java+springboot+undertow
+
+    bombardier -c 125 -n 5000000 http://localhost:8282/hello
 
 Testando a aplicação javascript+express
 
     bombardier -c 125 -n 5000000 http://localhost:9090/hello
 
-Testando a aplicação javascript+express
+Testando a aplicação javascript+restify
 
     bombardier -c 125 -n 5000000 http://localhost:9191/hello
 
