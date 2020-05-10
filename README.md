@@ -71,9 +71,9 @@ Tempo de execução: **1m 51s**
 ![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bexpress.png)
 
 
-### Javascript+Express
+### Javascript+Restify
 
-Avg - Reqs/Sec: **56.405*
+Avg - Reqs/Sec: **56.405**
 
 Tempo de execução: **1m 28s**
 
