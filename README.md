@@ -10,8 +10,9 @@ Para a realização dos teste, eu criei 4 aplicações em diferentes linguagens 
 
 Linguagens e Frameworks utilizados:
 
-* Java + Spring Boot + Embed Toncat
+* Java + Spring Boot + Embed Tomcat
 * Javascript (NodeJS) + Express
+* Javascript (NodeJS) + Restify
 * Go + Http
 * Python + Flask + Gunicorn
 
@@ -70,6 +71,15 @@ Tempo de execução: **1m 51s**
 ![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bexpress.png)
 
 
+### Javascript+Express
+
+Avg - Reqs/Sec: **56.405*
+
+Tempo de execução: **1m 28s**
+
+![javascript+express](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Brestify.png)
+
+
 ### Go+Http
 
 Avg - Reqs/Sec: **96.232**
@@ -91,6 +101,11 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
 
 #### Execução do projeto javascript+express
     cd javascript+express/
+    npm install
+    npm start
+
+#### Execução do projeto javascript+express
+    cd javascript+restify/
     npm install
     npm start
 
@@ -118,6 +133,10 @@ Testando a aplicação java+springboot
 Testando a aplicação javascript+express
 
     bombardier -c 125 -n 5000000 http://localhost:9090/hello
+
+Testando a aplicação javascript+express
+
+    bombardier -c 125 -n 5000000 http://localhost:9191/hello
 
 Testando a aplicação python+flask+gunicorn
 
