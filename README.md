@@ -130,6 +130,9 @@ Tempo de execução: **49s**
 ![javascript+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bhttp.png)
 
 
+### Gráfico (Média de requests por segundo)
+
+![grafico_01](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/grafico_01.png)
 
 
 ## Comandos para execução dos projetos e replicação
