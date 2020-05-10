@@ -13,6 +13,7 @@ Linguagens e Frameworks utilizados:
 * Java + Spring Boot + Embed Tomcat
 * Java + Spring Boot + Embed Jetty
 * Java + Spring Boot + Embed Undertow
+* Java + Http
 * Javascript (NodeJS) + Express
 * Javascript (NodeJS) + Restify
 * Javascript (NodeJS) + Http
@@ -101,6 +102,16 @@ Tempo de execução: **1m 21s**
 ![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bjetty.png)
 
 
+### Java+Http
+
+Avg - Reqs/Sec: **78.671**
+
+Tempo de execução: **1m 3s**
+
+![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bhttp.png)
+
+
+
 ### Go+Http
 
 Avg - Reqs/Sec: **96.232**
@@ -139,6 +150,11 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     cd java+springboot+undertow/
     ./gradlew build -x test
     java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
+
+#### Execução do projeto java+http
+    cd java+http/
+    javac JavaHTTPServer.java
+    java JavaHTTPServer    
 
 #### Execução do projeto javascript+express
     cd javascript+express/
