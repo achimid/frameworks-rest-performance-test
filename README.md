@@ -201,6 +201,10 @@ Testando a aplicação java+springboot+undertow
 
     bombardier -c 125 -n 5000000 http://localhost:8282/hello
 
+Testando a aplicação java+http
+
+    bombardier -c 125 -n 5000000 http://localhost:8383/hello
+
 Testando a aplicação javascript+express
 
     bombardier -c 125 -n 5000000 http://localhost:9090/hello
