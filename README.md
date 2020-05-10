@@ -15,6 +15,7 @@ Linguagens e Frameworks utilizados:
 * Java + Spring Boot + Embed Undertow
 * Javascript (NodeJS) + Express
 * Javascript (NodeJS) + Restify
+* Javascript (NodeJS) + Http
 * Go + Http
 * Python + Flask + Gunicorn
 
@@ -84,7 +85,7 @@ Tempo de execução: **1m 28s**
 
 ### Java+SpringBoot+Undertow
 
-Avg - Reqs/Sec: **96363**
+Avg - Reqs/Sec: **59.363**
 
 Tempo de execução: **1m 24s**
 
@@ -93,7 +94,7 @@ Tempo de execução: **1m 24s**
 
 ### Java+SpringBoot+Jetty
 
-Avg - Reqs/Sec: **61096**
+Avg - Reqs/Sec: **61.096**
 
 Tempo de execução: **1m 21s**
 
@@ -107,6 +108,16 @@ Avg - Reqs/Sec: **96.232**
 Tempo de execução: **51s**
 
 ![go+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/go%2Bhttp.png)
+
+
+### Javascript+Http
+
+Avg - Reqs/Sec: **100.190**
+
+Tempo de execução: **49s**
+
+![javascript+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/javascript%2Bhttp.png)
+
 
 
 
@@ -134,7 +145,7 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     npm install
     npm start
 
-#### Execução do projeto javascript+express
+#### Execução do projeto javascript+restfy
     cd javascript+restify/
     npm install
     npm start
@@ -149,6 +160,12 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     source venv/bin/activate
     pip install -r requirements.txt
     gunicorn --bind 127.0.0.1:6060 app:app -w 8 --worker-class=gevent --worker-connections=1000
+
+#### Execução do projeto javascript+http
+    cd javascript+http/
+    npm install
+    npm start
+
 
 #### Execução do banchmark (5 milhões de requisições, 125 requisições em paralelo)
     
@@ -175,6 +192,10 @@ Testando a aplicação javascript+express
 Testando a aplicação javascript+restify
 
     bombardier -c 125 -n 5000000 http://localhost:9191/hello
+
+Testando a aplicação javascript+http
+
+    bombardier -c 125 -n 5000000 http://localhost:9292/hello
 
 Testando a aplicação python+flask+gunicorn
 
