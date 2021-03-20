@@ -103,7 +103,7 @@ Tempo de execução: **1m 21s**
 ![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bjetty.png)
 
 
-### Java+SpringBoot+Jetty
+### Java+SpringBoot+WebFlux+Netty
 
 Avg - Reqs/Sec: **40.340**
 
