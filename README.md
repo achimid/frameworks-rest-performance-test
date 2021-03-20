@@ -110,7 +110,7 @@ Avg - Reqs/Sec: **40.340**
 
 Tempo de execução: **2m 3s**
 
-![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bwebflux%2Bnetty.png)
+![java+springboot+webflux+netty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bwebflux%2Bnetty.png)
 
 
 ### Java+Quarkus+Native
@@ -119,7 +119,7 @@ Avg - Reqs/Sec: **48.102**
 
 Tempo de execução: **1m 43s**
 
-![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bquarkus%2Bnative.png)
+![java+quarkus+native](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bquarkus%2Bnative.png)
 
 
 ### Java+Http
@@ -129,15 +129,6 @@ Avg - Reqs/Sec: **78.671**
 Tempo de execução: **1m 3s**
 
 ![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bhttp.png)
-
-
-### Java+Quarkus
-
-Avg - Reqs/Sec: **78.671**
-
-Tempo de execução: **1m 3s**
-
-![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bquarkus.png)
 
 
 ### Go+Http
@@ -187,15 +178,15 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     ./gradlew build -x test
     java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
 
-#### Execução do projeto java+http
-    cd java+http/
-    javac JavaHTTPServer.java
-    java JavaHTTPServer    
-
 #### Execução do projeto java+quarkus+native
     cd java+quarkus/
      ./mvnw clean package -Pnative
      ./target/rest-client-quickstart-1.0.0-SNAPSHOT-runner    
+
+#### Execução do projeto java+http
+    cd java+http/
+    javac JavaHTTPServer.java
+    java JavaHTTPServer    
 
 #### Execução do projeto javascript+express
     cd javascript+express/
