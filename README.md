@@ -13,6 +13,7 @@ Linguagens e Frameworks utilizados:
 * Java + Spring Boot + Embed Tomcat
 * Java + Spring Boot + Embed Jetty
 * Java + Spring Boot + Embed Undertow
+* Java + Spring Boot + WebFlux + Netty
 * Java + Http
 * Javascript (NodeJS) + Express
 * Javascript (NodeJS) + Restify
@@ -102,6 +103,15 @@ Tempo de execução: **1m 21s**
 ![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bjetty.png)
 
 
+### Java+SpringBoot+Jetty
+
+Avg - Reqs/Sec: **40.340**
+
+Tempo de execução: **2m 3s**
+
+![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bwebflux%2Bnetty.png)
+
+
 ### Java+Http
 
 Avg - Reqs/Sec: **78.671**
@@ -154,6 +164,11 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     ./gradlew build -x test
     java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
 
+#### Execução do projeto java+springboot+webflux+netty
+    cd java+springboot+webflux+netty/
+    ./gradlew build -x test
+    java -jar build/libs/rest-service-0.0.1-SNAPSHOT.jar    
+
 #### Execução do projeto java+http
     cd java+http/
     javac JavaHTTPServer.java
@@ -203,6 +218,10 @@ Testando a aplicação java+springboot+jetty
 Testando a aplicação java+springboot+undertow
 
     bombardier -c 125 -n 5000000 http://localhost:8282/hello
+
+Testando a aplicação java+springboot+webflux+netty
+
+    bombardier -c 125 -n 5000000 http://localhost:8484/hello
 
 Testando a aplicação java+http
 
