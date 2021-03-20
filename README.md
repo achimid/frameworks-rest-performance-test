@@ -14,6 +14,7 @@ Linguagens e Frameworks utilizados:
 * Java + Spring Boot + Embed Jetty
 * Java + Spring Boot + Embed Undertow
 * Java + Spring Boot + WebFlux + Netty
+* Java + Quarkus + Native
 * Java + Http
 * Javascript (NodeJS) + Express
 * Javascript (NodeJS) + Restify
@@ -112,6 +113,15 @@ Tempo de execução: **2m 3s**
 ![java+springboot+jetty](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bspringboot%2Bwebflux%2Bnetty.png)
 
 
+### Java+Quarkus+Native
+
+Avg - Reqs/Sec: **48.102**
+
+Tempo de execução: **1m 43s**
+
+![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bquarkus%2Bnative.png)
+
+
 ### Java+Http
 
 Avg - Reqs/Sec: **78.671**
@@ -120,6 +130,14 @@ Tempo de execução: **1m 3s**
 
 ![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bhttp.png)
 
+
+### Java+Quarkus
+
+Avg - Reqs/Sec: **78.671**
+
+Tempo de execução: **1m 3s**
+
+![java+http](https://github.com/achimid/frameworks-rest-performance-test/blob/master/_imagens/java%2Bquarkus.png)
 
 
 ### Go+Http
@@ -174,6 +192,11 @@ Para executar o projetos, você deve possuir as linguagens instaladas em sua maq
     javac JavaHTTPServer.java
     java JavaHTTPServer    
 
+#### Execução do projeto java+quarkus+native
+    cd java+quarkus/
+     ./mvnw clean package -Pnative
+     ./target/rest-client-quickstart-1.0.0-SNAPSHOT-runner    
+
 #### Execução do projeto javascript+express
     cd javascript+express/
     npm install
@@ -222,6 +245,10 @@ Testando a aplicação java+springboot+undertow
 Testando a aplicação java+springboot+webflux+netty
 
     bombardier -c 125 -n 5000000 http://localhost:8484/hello
+
+Testando a aplicação java+quarkus+native
+
+    bombardier -c 125 -n 5000000 http://localhost:8585/hello
 
 Testando a aplicação java+http
 
