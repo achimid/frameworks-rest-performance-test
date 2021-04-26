@@ -24,6 +24,7 @@ Linguagens e Frameworks utilizados:
 
 
 ## Executando com Docker + Script
+    wget https://raw.githubusercontent.com/achimid/frameworks-rest-performance-test/master/performance-test-script.sh
     bash ./performance-test-script.sh 
 
 
