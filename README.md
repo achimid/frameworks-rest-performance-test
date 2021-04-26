@@ -23,6 +23,10 @@ Linguagens e Frameworks utilizados:
 * Python + Flask + Gunicorn
 
 
+## Executando com Docker + Script
+    bash ./performance-test-script.sh 
+
+
 ## Ferramenta de benchmark (Bombardier)
 Seguindo a recomendação do artigo mencionado, utilizei como ferramenta de benchmark o (Bombardier), é uma ferramenta escrita em GO que fica responsavel por enviar as requisições de teste para as aplicações que será testada, com ela é possivel simular grandes quantidades de requisições paralelas. Ao final da execução é exibido um relatório informando os dados coletados.
 
