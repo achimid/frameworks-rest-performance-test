@@ -10,7 +10,8 @@ declare -a projects=(
     'java-springboot-webflux-netty' 
     'javascript-express' 
     'javascript-http' 
-    'javascript-restfy')
+    'javascript-restfy'
+    'go-http')
 
 for container_name in ${projects[@]}; do
 
