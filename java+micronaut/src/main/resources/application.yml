@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: restservice
+netty:
+  default:
+    allocator:
+      max-order: 3

@@ -8,9 +8,11 @@ declare -a projects=(
     'java-springboot-tomcat' 
     'java-springboot-undertow' 
     'java-springboot-webflux-netty' 
+    'java-micronaut'
     'javascript-express' 
     'javascript-http' 
     'javascript-restfy'
+    'kotlin-javalin'
     'go-http')
 
 for container_name in ${projects[@]}; do
