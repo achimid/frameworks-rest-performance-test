@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 connections=125
-number_of_requests=1000000
+number_of_requests=10000000
 
 declare -a projects=(
     'java-springboot-jetty' 
@@ -12,7 +12,6 @@ declare -a projects=(
     'javascript-express' 
     'javascript-http' 
     'javascript-restfy'
-    'kotlin-javalin'
     'go-http')
 
 for container_name in ${projects[@]}; do
