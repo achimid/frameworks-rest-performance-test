@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
         run:
-          working-directory: ./java-micronaut
+          working-directory: ./java+micronaut
     steps:
       - uses: actions/checkout@v2
         name: Set up JDK 11
@@ -36,7 +36,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: ./java-micronaut
+          context: ./java+micronaut
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/frameworks-performance-java-micronaut:latest
       
