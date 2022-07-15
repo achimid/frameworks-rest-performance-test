@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 connections=125
-number_of_requests=10000000
+number_of_requests=1000000
 
 declare -a projects=(
     'java-springboot-jetty' 
